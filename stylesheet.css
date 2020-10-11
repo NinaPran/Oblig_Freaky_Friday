@@ -11,7 +11,13 @@ h1 {
 }
 
 h2 {
-font-size: 30px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p {
+    line-height: 150%;
+    font-size: 17px;
 }
 
 img {
@@ -25,10 +31,11 @@ img {
 
 .header {
     background-color: rgb(125, 84, 152);
-    height: 50px;
+    height: 60px;
     position: fixed;
     width: 100%;
     top: 0;
+    padding-left: 45px;
 }
 
 /* header hover hentet fra w3school */
@@ -37,8 +44,8 @@ img {
     float: left;
     display: block;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 18px 18px;
+    font-size: 20px;
     color: rgb(255, 253, 231);
     text-decoration: none;
 }
@@ -48,8 +55,15 @@ img {
     color: black;
 }
 
+.logo-container {
+    width: 50px;
+    float: left;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+
 .main {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 /* Bilde fra unsplash: https://images.unsplash.com/photo-1532798369041-b33eb576ef16 */
@@ -65,10 +79,15 @@ img {
 .citrus-galaxy {
     color: rgb(4, 61, 120);
     width: 25%;
-    padding-left: 30px;
-    font-size: 18px;
-    font-style: italic;
+    padding-left: 4%;
+    padding-top: 2%;
     float: left;
+}
+
+.mission {
+    padding: 13%;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .top-center {
@@ -101,10 +120,9 @@ img {
 .history-container {
     width: 50%;
     float: right;
-    padding: 20px 40px;
+    padding: 4% 10% 0 10%;
     color: rgb(255, 253, 231);
-    font-size: 16px;
-    }
+}
 
 .botom-container {
     float: left;
@@ -114,7 +132,7 @@ img {
 .contact {
     float: left;
     width: 50%;
-    padding: 20px 40px;
+    padding: 4% 10% 0 10%;
     color: rgb(255, 253, 231);
     text-align: center;
     font-size: 16px;
@@ -123,4 +141,80 @@ img {
 .image-container-stars {
     width: 50%;
     float: right;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    .history-container {
+        padding: 4% 4% 0 4%;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .top-container {
+        padding-top: 0px;
+    }
+    .citrus-galaxy {
+        width: 100%;
+    }
+    .mission {
+        background-color: #d4c6e0;
+        padding: 0 13%;
+    }
+    .history-container, .contact {
+        width: 100%;
+        padding: 1% 10% 4% 10%;
+    }
+    .image-container-orange {
+        display: none;
+    }
+    .image-container-stars {
+        width: 100%;
+        max-height: 85px;
+        float: left;
+        overflow: hidden;
+    }
+    @media only screen and (max-width: 780px) {
+        .top-center {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    @media only screen and (max-width: 410px) {
+        .header {
+            height: 60px;
+            padding-left: 20px;
+        }
+        .header a {
+            padding: 19px 14px;
+            font-size: 17px;
+        }
+        .logo-container {
+            width: 40px;
+            margin-right: 18px;
+            margin-top: 5px;
+        }
+    }
 }
