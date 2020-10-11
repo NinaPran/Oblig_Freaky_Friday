@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+    overflow: auto;
+    background-color: rgb(45, 62, 121);
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+font-size: 30px;
+}
+
+img {
+    display: block;
+    width: 100%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(125, 84, 152);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* header hover hentet fra w3school */
+
+.header a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+    color: rgb(255, 253, 231);
+    text-decoration: none;
+}
+
+.header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+/* Bilde fra unsplash: https://images.unsplash.com/photo-1532798369041-b33eb576ef16 */
+
+.top-container {
+    background-image: url(img/bubbles.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+.citrus-galaxy {
+    color: rgb(4, 61, 120);
+    width: 25%;
+    padding: 30px 30px 30px 30px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.top-right {
+    width: 65%;
+    float: right;
+    margin-right: 25%;
+}
+
+.stand-in-video {
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(85, 78, 86);
+    width: 50%;
+    max-width: 550px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-container {
+    float: left;
+    width: 100%;
+}
+
+.image-container-orange {
+    width: 50%;
+    float: left;
+}
+
+.history-container {
+    width: 50%;
+    float: right;
+    padding: 20px 40px;
+    color: rgb(255, 253, 231);
+    font-size: 18px;
+    }
+
+.botom-container {
+    float: left;
+    width: 100%;
+}
+
+.contact {
+    float: left;
+    width: 50%;
+    padding: 20px 40px;
+    color: rgb(255, 253, 231);
+    text-align: center;
+    font-size: 18px;
+}
+
+.image-container-stars {
+    width: 50%;
+    float: right;
+}
