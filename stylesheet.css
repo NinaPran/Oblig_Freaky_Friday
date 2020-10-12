@@ -76,35 +76,34 @@ img {
     padding-top: 100px;
 }
 
+.border {
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(85, 78, 86);
+    width: 820px;
+    height: 420px;
+    margin: auto;
+}
+
 .citrus-galaxy {
     color: rgb(4, 61, 120);
-    width: 25%;
-    padding-left: 4%;
-    padding-top: 2%;
     float: left;
+    background-color: #fffde5;
+    width: 400px;
+    height: 100%;
+    padding: 20px 30px;
+    border-right: 5px solid rgb(85, 78, 86);
 }
 
 .mission {
-    padding: 13%;
     font-size: 20px;
     font-style: italic;
 }
 
-.top-center {
-    width: 50%;
-    float: right;
-    margin-right: 25%;
-}
-
 .stand-in-video {
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(85, 78, 86);
     width: 100%;
-    max-width: 400px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
+    float: left;
 }
 
 .middle-container {
@@ -173,16 +172,6 @@ img {
 }
 
 @media only screen and (max-width: 999px) {
-    .top-container {
-        padding-top: 0px;
-    }
-    .citrus-galaxy {
-        width: 100%;
-    }
-    .mission {
-        background-color: #d4c6e0;
-        padding: 0 13%;
-    }
     .history-container, .contact {
         width: 100%;
         padding: 1% 10% 4% 10%;
@@ -196,25 +185,45 @@ img {
         float: left;
         overflow: hidden;
     }
-    @media only screen and (max-width: 780px) {
-        .top-center {
+    @media only screen and (max-width: 820px) {
+        .top-container {
+            background-image: none;
+            background-color: #fffde5;
+            padding-top: 0;
+        }
+        
+        .border {
+            border: none;
+            width: auto;
+            height: auto;
+        }
+        .citrus-galaxy {
+            color: rgb(4, 61, 120);
+            float: left;
+            background-color: #fffde5;
             width: 100%;
-            margin: 0 auto;
+            height: auto;
+            padding: 1% 10% 4% 10%;
         }
-    }
-    @media only screen and (max-width: 410px) {
-        .header {
-            height: 60px;
-            padding-left: 20px;
+        .stand-in-video {
+            width: 100%;
+            float: left;
+            border: 10px solid rgb(85, 78, 86);
         }
-        .header a {
-            padding: 19px 14px;
-            font-size: 17px;
-        }
-        .logo-container {
-            width: 40px;
-            margin-right: 18px;
-            margin-top: 5px;
+        @media only screen and (max-width: 410px) {
+            .header {
+                height: 60px;
+                padding-left: 20px;
+            }
+            .header a {
+                padding: 19px 14px;
+                font-size: 17px;
+            }
+            .logo-container {
+                width: 40px;
+                margin-right: 18px;
+                margin-top: 5px;
+            }
         }
     }
 }
