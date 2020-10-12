@@ -188,7 +188,7 @@ img {
     @media only screen and (max-width: 820px) {
         .top-container {
             background-image: none;
-            background-color: 45, 62, 121;
+            background-color:  rgb(45, 62, 121);
             padding-top: 0;
         }
         
@@ -200,7 +200,7 @@ img {
         .citrus-galaxy {
             color: rgb(255, 253, 231);
             float: left;
-            background-color:45, 62, 121;
+            background-color:  rgb(45, 62, 121);
             width: 100%;
             height: auto;
             padding: 1% 10% 4% 10%;
